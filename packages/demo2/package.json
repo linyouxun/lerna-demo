@@ -1,6 +1,6 @@
 {
   "name": "@lyx/demo2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "lyx <724040735@qq.com>",
   "homepage": "",
@@ -17,6 +17,6 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@lyx/demo1": "^1.0.0"
+    "@lyx/demo1": "^1.0.1"
   }
 }
