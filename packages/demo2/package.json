@@ -1,0 +1,19 @@
+{
+  "name": "demo2",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "lyx <724040735@qq.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/demo2.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
