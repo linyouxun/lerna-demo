@@ -1,5 +1,6 @@
 {
   "name": "root",
+  "version": "1.0.5",
   "private": true,
   "packages": [
     "packages/*"
