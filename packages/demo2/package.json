@@ -1,6 +1,6 @@
 {
   "name": "@xyym/demo2",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "> TODO: description",
   "author": "lyx <724040735@qq.com>",
   "homepage": "",
@@ -17,7 +17,7 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "dependencies": {
-    "@xyym/demo1": "^1.0.5"
+    "@xyym/demo1": "^1.0.6"
   },
   "gitHead": "70ec805544d743a92d32197df9528789570a6d87",
   "publishConfig": {
