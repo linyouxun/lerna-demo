@@ -1,0 +1,29 @@
+{
+  "name": "components",
+  "version": "1.0.6",
+  "description": "> TODO: description",
+  "author": "林有勋 <linyouxun@xjj.com>",
+  "homepage": "https://github.com/linyouxun/lerna-demo#readme",
+  "license": "ISC",
+  "main": "dist/components.js",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "http://192.168.0.169:8081/repository/npm-public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linyouxun/lerna-demo.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/linyouxun/lerna-demo/issues"
+  }
+}
