@@ -8,14 +8,11 @@ import fsp from "fs/promises";
 import typescript from "@rollup/plugin-typescript";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-
-console.log(process.env.WORKSPACE)
 const INPUT_PATH = path.resolve(process.env.WORKSPACE, "src/index.ts");
 const OUTPUT_PATH = path.resolve(process.env.WORKSPACE, "dist");
 
 export default new Promise(async (resolve) => {
   const pkg = await getPackageJSON(process.env.WORKSPACE);
-  const { buildOptions } = pkg;
   const externals = [];
 
   if (pkg.dependencies) {
@@ -32,7 +29,7 @@ export default new Promise(async (resolve) => {
       {
         file: path.join(OUTPUT_PATH, "bundle.umd.js"),
         format: "umd",
-        name: buildOptions.name,
+        name: pkg.name,
       },
       {
         file: path.join(OUTPUT_PATH, "bundle.esm.js"),

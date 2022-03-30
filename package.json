@@ -12,7 +12,8 @@
     "access": "public"
   },
   "scripts": {
-    "build": "node ./scripts/build.js"
+    "build": "node ./scripts/build.js --link",
+    "link": "bash ./scripts/npm-link.sh "
   },
   "dependencies": {
     "@babel/core": "^7.17.8",
