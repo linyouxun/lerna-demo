@@ -8,7 +8,12 @@ import fsp from "fs/promises";
 import typescript from "@rollup/plugin-typescript";
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
-const INPUT_PATH = path.resolve(process.env.WORKSPACE, "src/index.ts");
+const tsIndexPath = path.resolve(process.env.WORKSPACE, "src/index.ts");
+const jsIndexPath = path.resolve(process.env.WORKSPACE, "src/index.js")
+let INPUT_PATH = tsIndexPath;
+if(!fs.existsSync(tsIndexPath)) {
+  INPUT_PATH = jsIndexPath
+}
 const OUTPUT_PATH = path.resolve(process.env.WORKSPACE, "dist");
 
 export default new Promise(async (resolve) => {
@@ -22,7 +27,15 @@ export default new Promise(async (resolve) => {
   if (pkg.peerDependencies) {
     externals.push(...Object.keys(pkg.peerDependencies));
   }
+  
+  // const commonPkg = await getPackageJSON('./');
+  // if (commonPkg.dependencies) {
+  //   externals.push(...Object.keys(commonPkg.dependencies));
+  // }
 
+  // if (commonPkg.peerDependencies) {
+  //   externals.push(...Object.keys(commonPkg.peerDependencies));
+  // }
   resolve({
     input: INPUT_PATH,
     output: [
@@ -57,7 +70,7 @@ export default new Promise(async (resolve) => {
       commonjs(),
       terser(),
     ],
-    external: [...externals, "vue"],
+    external: [...externals, {vue: 'Vue'}],
   });
 });
 

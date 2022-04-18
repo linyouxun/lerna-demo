@@ -14,6 +14,9 @@ $ lerna changed
 # 打tag，传git，传npm
 $ lerna publish
 
+# 两个包有所关联
+$ lerna link
+
 # 抽离公共模块
 $ lerna bootstrap --hoist
 ```

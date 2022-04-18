@@ -5,7 +5,7 @@
   "author": "林有勋 <linyouxun@xjj.com>",
   "homepage": "https://github.com/linyouxun/lerna-demo#readme",
   "license": "ISC",
-  "main": "dist/components.js",
+  "main": "dist/bundle.esm.js",
   "directories": {
     "lib": "src",
     "test": "__tests__"
@@ -25,5 +25,8 @@
   },
   "bugs": {
     "url": "https://github.com/linyouxun/lerna-demo/issues"
+  },
+  "dependencies": {
+    "less": "^4.1.2"
   }
 }

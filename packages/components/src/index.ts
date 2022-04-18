@@ -1,3 +1,5 @@
 // import Init from './Template/Template';
-import Template from './Template/Template.vue'
-export default { Template }
+import MyTemplate from './MyTemplate/MyTemplate.vue';
+import HelloWorld from './HelloWorld/HelloWorld.vue';
+
+export default { MyTemplate, HelloWorld }
