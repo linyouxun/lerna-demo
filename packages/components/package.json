@@ -13,9 +13,6 @@
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "registry": "http://192.168.0.169:8081/repository/npm-public"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/linyouxun/lerna-demo.git"
@@ -28,5 +25,6 @@
   },
   "dependencies": {
     "less": "^4.1.2"
-  }
+  },
+  "gitHead": "5e1dbf2b6fc00a8481770c8484b425d374623833"
 }
