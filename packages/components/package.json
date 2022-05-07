@@ -13,6 +13,9 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/linyouxun/lerna-demo.git"
@@ -26,5 +29,5 @@
   "dependencies": {
     "less": "^4.1.2"
   },
-  "gitHead": "2ddcd640f516c93718722c7f8f0ffe1edee8e014"
+  "gitHead": "502c2dc4e187efac5874867f1b488b35b67bf14f"
 }
